@@ -8,13 +8,13 @@
        background-color:#708090;
     }
     #wrapper{
-         padding:15px;
-        display:grid;
-        grid-template-columns:1fr 1fr 1fr;
-        grid-template-rows:300px 300px 300px;
-        text-align: center;
-      grid-gap:15px;
-    }
+       padding:15px;
+      display:grid;
+     grid-template-columns:repeat(auto-fit,minmax(370px,1fr));
+    grid-auto-rows:400px;
+      text-align: center;
+    grid-gap:15px;
+  }
   h1{
     font-size:2.3em;
     text-align:center;
@@ -26,8 +26,3 @@
     }
   
   
-  @media screen and (max-width:700px){
-    #wrapper{
-        grid-template-columns:1fr;
-    }
-  }
